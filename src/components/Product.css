@@ -54,3 +54,8 @@
     background-color: #f1b61f;
     cursor: pointer;
 }
+
+.product__button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

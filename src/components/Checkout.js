@@ -7,11 +7,12 @@ import { useHistory } from 'react-router';
 import cart from '../cart.svg';
 import { useSelector } from 'react-redux';
 import { selectCart } from '../features/cartSlice';
+import { selectUser } from '../features/userSlice';
 
 function Checkout() {
     const history = useHistory();
     const Cart = useSelector(selectCart);
-    const user = true;
+    const user = useSelector(selectUser);
     return (
         <div className="checkout">
              <Header />
@@ -60,8 +61,18 @@ function Checkout() {
                         <div className="checkout__rightSide">
                             <h2>You are not signed in</h2>
                             <div className="checkout__buttons">
-                                <button className="checkout__button__signIn">Sign in to your account</button>
-                                <button className="checkout__button__signUp">Sign up now</button>
+                                <button 
+                                    className="checkout__button__signIn"
+                                    onClick={() => history.push("/login")}
+                                >
+                                    Sign in to your account
+                                </button>
+                                <button 
+                                    className="checkout__button__signUp"
+                                    onClick={() => history.push("/login")}
+                                >
+                                    Sign up now
+                                </button>
                             </div>
                         </div>
                     </div>
