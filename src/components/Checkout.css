@@ -1,0 +1,139 @@
+.checkout__body {
+    display: flex;
+    align-items: center;
+}
+
+.checkout__content {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    flex: 0.8;
+    background-color: white;
+    justify-content: center;
+}
+
+.checkout__banner {
+    object-fit: contain;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.checkout__content > h2 {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.checkout__content > p {
+    margin: 20px;
+}
+
+.clickHere {
+    font-weight: 600;
+}
+
+.clickHere:hover {
+    color: darkgray;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.checkout__items {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout__noUser {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.checkout__emptyCart {
+    object-fit: contain;
+    height: 50vh;
+    margin: 20px;
+}
+
+.checkout__rightSide {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 400px;
+}
+
+.checkout__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.checkout__button__signIn {
+    background-color: #F7CA00;
+    border: #F7CA00;
+    font-size: 1.2em;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.checkout__button__signIn:hover {
+    background-color: #e4ba00;
+    border: #e4ba00;
+    cursor: pointer;
+}
+
+.checkout__button__signUp {
+    background-color: white;
+    border: 1px solid lightgray;
+    font-size: 1.2em;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.checkout__button__signUp:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.checkout__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    height: 30vh;
+    flex: 0.2;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+.checkout__info > h4 {
+    font-size: 1.2em;
+    margin: 20px;
+}
+
+.checkout__info > p {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin: 20px;
+}
+
+.checkout__button {
+    background-color: #F7CA00;
+    border: #F7CA00;
+    padding: 15px;
+    width: 8em;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.checkout__button:hover {
+    background-color: #e4ba00;
+    cursor: pointer;
+}
